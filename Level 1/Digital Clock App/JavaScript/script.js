@@ -16,11 +16,9 @@ setInterval(()=>{
     month.innerHTML = months[currentDateAndTime.getMonth()];
     day.innerHTML = currentDateAndTime.getDate();
     weekday.innerHTML = weekdays[currentDateAndTime.getDay()];
-    hour.innerHTML = currentDateAndTime.getHours();
-    minute.innerHTML = currentDateAndTime.getMinutes();
-    second.innerHTML = currentDateAndTime.getSeconds();
+    hour.innerHTML = (currentDateAndTime.getHours()<10?"0":"")+currentDateAndTime.getHours();
+    minute.innerHTML = (currentDateAndTime.getMinutes()<10?"0":"")+currentDateAndTime.getMinutes();
+    second.innerHTML = (currentDateAndTime.getSeconds()<10?"0":"")+currentDateAndTime.getSeconds();
 }, 1000);
 
 
-
-console.log(month)
